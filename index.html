@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site with Frames</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    iframe {
+      border: none;
+    }
+    .menu-frame {
+      width: 200px;
+     
+    }
+    .content-frame {
+      flex-grow: 1;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe class="menu-frame" id="menuFrame" src="menu/en.html"></iframe>
+    <iframe class="content-frame" id="contentFrame" name="contentFrame" src="guides/en/main.html"></iframe>
+  </div>
+
+  <script>
+    // Function to switch language by updating the menu and content iframe sources
+    function switchLanguage(lang) {
+      const menuFrame = document.getElementById('menuFrame');
+      const contentFrame = document.getElementById('contentFrame');
+      menuFrame.src = `menu/${lang}.html`;
+      contentFrame.src = `guides/${lang}/main.html`;
+    }
+  </script>
+</body>
+</html>

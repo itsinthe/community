@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню Українською</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+   
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 15px 0;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="../guides/uk/main.html" target="contentFrame">Головна</a></li>
+    <li><a href="../guides/uk/guide01.html" target="contentFrame">гайд01</a></li>
+    <li><a href="../guides/uk/guide02.html" target="contentFrame">гайд02</a></li>
+    <li><a href="../guides/uk/guide02.html" target="contentFrame">гайд03</a></li>
+    <li><a href="../guides/uk/guide02.html" target="contentFrame">гайд04</a></li>
+  </ul>
+
+  <div class="menu-language">
+  <strong>Мова:</strong>
+  <ul>
+    <li><a href="#" onclick="parent.switchLanguage('en')">English</a></li>
+    <li><a href="#" onclick="parent.switchLanguage('uk')">Українська</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

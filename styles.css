@@ -1,0 +1,27 @@
+
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .menu-frame {
+    width: 200px;
+    background-color: #1f3253;
+    color: #fff;
+    padding: 20px;
+    border-color: #6ceded;
+    border-right: solid 11px #0043ff;
+    border-radius: 0 0 50px;
+  }
+  
+
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .menu-language {
+    bottom: 50px;
+    position: absolute;
+  }

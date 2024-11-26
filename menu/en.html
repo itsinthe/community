@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English Menu</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 15px 0;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+    
+  <ul>
+    <li><a href="../guides/en/main.html" target="contentFrame">Main</a></li>
+    <li><a href="../guides/en/guide01.html" target="contentFrame">guide01</a></li>
+    <li><a href="../guides/en/guide02.html" target="contentFrame">guide02</a></li>
+    <li><a href="../guides/en/guide02.html" target="contentFrame">guide03</a></li>
+    <li><a href="../guides/en/guide02.html" target="contentFrame">guide04</a></li>
+  </ul>
+
+  <div class="menu-language">
+  <strong>Switch Language:</strong>
+  <ul>
+    <li><a href="#" onclick="parent.switchLanguage('en')">English</a></li>
+    <li><a href="#" onclick="parent.switchLanguage('uk')">Українська</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
